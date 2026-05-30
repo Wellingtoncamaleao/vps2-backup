@@ -1,0 +1,3 @@
+# Crontab do container backup-vps2 (busybox crond, Alpine).
+# Backup diario as 08:00 UTC = 05:00 BRT — 1h depois do control-bkp pra escalonar.
+0 8 * * * /usr/local/bin/backup-vps2.sh >> /proc/1/fd/1 2>&1
