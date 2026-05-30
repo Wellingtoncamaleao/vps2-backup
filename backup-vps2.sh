@@ -75,7 +75,8 @@ for ALVO in "${ALVOS[@]}"; do
 
     TAMANHO="$(du -h "$ARQUIVO" | cut -f1)"
     log "dump $APELIDO OK ($TAMANHO)"
-    RESUMO="${RESUMO}\n• $APELIDO: $TAMANHO"
+    RESUMO="${RESUMO}
+• $APELIDO: $TAMANHO"
     TOTAL_OK=$((TOTAL_OK+1))
 done
 
